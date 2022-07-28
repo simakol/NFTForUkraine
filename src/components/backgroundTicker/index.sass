@@ -1,0 +1,42 @@
+@import "../../global"
+
+@keyframes moveBack
+  0%
+    background-position-y: 100%
+  100%
+    background-position-y: -100%
+
+.background-ticker
+  position: absolute
+  left: 20px
+  top: 10px
+  z-index: 5
+
+  .background-ticker-wrapper
+    position: relative
+
+    .background-ticker-item-1
+      position: absolute
+      top: 0
+      left: 60px
+      z-index: 2
+      width: 100px
+      background-size: cover
+      background-image: url("../../assets/images/background-ticker-1.png")
+      animation: moveBack 30s linear infinite
+
+    .background-ticker-item-2
+      position: absolute
+      top: 0
+      left: 0
+      width: 100px
+      background-size: cover
+      background-image: url("../../assets/images/background-ticker-2.png")
+      animation: moveBack 25s linear infinite
+
+@media (max-width: 1200px)
+  .background-ticker
+    position: absolute
+    left: 0
+    top: 10px
+    z-index: 0

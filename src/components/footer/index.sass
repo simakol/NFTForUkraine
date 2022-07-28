@@ -1,0 +1,31 @@
+@import "../../global"
+
+.footer
+    padding: 50px 0
+    text-align: center
+    @include first-layer
+
+    .footer-copyright
+        font-weight: 600
+        font-size: 21px
+        line-height: 26px
+        color: #FFFFFF
+        &::before
+            content: "\00A9"
+            padding-right: 7px
+
+    .footer-link
+        display: block
+        margin-bottom: 22px
+
+@media (max-width: $mobile)
+.footer
+    padding: 35px 0
+
+    .footer-copyright
+        font-size: 13px
+        line-height: 16px
+
+    .footer-link
+        display: block
+        margin-bottom: 28px

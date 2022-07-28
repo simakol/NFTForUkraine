@@ -1,0 +1,26 @@
+@import "../../global"
+
+.mint-item
+    @include flex-props-column-center
+    font-style: normal
+    font-weight: bold
+    font-size: 21px
+    line-height: 26px
+    text-align: center
+    color: #FFFFFF
+
+    .nft-image
+        width: 190px
+        height: 253px
+        margin-bottom: 30px
+
+    .mint-amount, .mint-price
+        margin-bottom: 20px
+
+    .mint-btn
+        color: #000000
+        padding: 13px 36px
+        background: #FFFFFF
+        border-radius: 10px
+        text-transform: uppercase
+        @include button-hover

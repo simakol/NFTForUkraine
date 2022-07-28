@@ -1,0 +1,36 @@
+{
+  "lang_full_name": "English",
+  "main_page": {
+    "global": {
+      "buy_button": "MINT"
+    },
+    "header": {
+      "firstLink": "HOME",
+      "secondLink": "WHO WE ARE",
+      "thirdLink": "MINT",
+      "fourthLink": "RESULTS"
+    },
+    "hero": {
+      "title": "MINT AN NFT, HELP SAVE UKRAINE"
+    },
+    "about_us": {
+      "title": "WHO WE ARE",
+      "text1": "We are citizens of Ukraine, which is currently under attack by russian soldiers. Our team consists of 3 people and we're trying to raise as much money for the ukrainian army, as humanly possible. Our people are dying and we cannot do everything alone.",
+      "text2": "100% of the profits are immediately sent to the army's bank account."
+    },
+    "mint": {
+      "title": "MINT",
+      "text": "You can help the ukrainian army by minting any of the NFT's below. Any help is very appreciated but make sure you're not donating everything you've got."
+    },
+    "results": {
+      "title": "RESULTS",
+      "text1": "We will be posting daily updates on our official twitter account to keep everyone updated. Repeating the previous statement, 100% of the profits from the NFT minting is immediately transferred to the army.",
+      "text2": "You can see the results for yourself by either checking out our Twitter or by looking at the transactions from our wallet on the solana explorer."
+    },
+    "donated": {
+      "main_text": "CURRENTLY DONATED",
+      "subtext": "including team's donations"
+    },
+    "copyright": "All rights reserved."
+  }
+}

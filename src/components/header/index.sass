@@ -1,0 +1,136 @@
+@import "../../global"
+
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  background-color: rgba(0,0,0,.75)
+  z-index: 4
+  padding-bottom: 30px
+  &.active
+    background-color: black
+
+  .burger-menu
+    display: none
+
+  .header-nav
+    width: 60vw
+    margin: 0 auto
+    @include flex-props-space-between
+    padding-top: 45px
+
+    .header-nav-link
+      cursor: pointer
+      font-size: 24px
+      color: #fff
+      text-transform: uppercase
+      font-weight: 700
+      padding-bottom: 5px
+      border-bottom: 2px solid transparent
+
+    .header-nav-link-active
+      border-bottom-color: #fff
+
+@media (max-width: $mobile)
+  .header
+    .burger-menu
+      display: inline-block
+      padding-top: 34px
+      padding-left: 25px
+
+      .burger-menu-bar
+        width: 37px
+        height: 6px
+        background: #FFFFFF
+        margin-bottom: 3px
+
+        &:nth-child(1)
+          animation: closeFirstBar 0.5s linear alternate-reverse forwards
+        &:nth-child(2)
+          animation: showMiddleBar 0.5s linear forwards
+        &:nth-child(3)
+          animation: closeThirdBar 0.5s linear alternate-reverse forwards
+
+      &.cross
+        .burger-menu-bar
+          &:nth-child(1)
+            animation: moveFirstBar 0.5s linear forwards
+          &:nth-child(2)
+            animation: hideMiddleBar 0.5s linear forwards
+          &:nth-child(3)
+            animation: moveThirdBar 0.5s linear forwards
+
+    .header-nav
+      @include flex-props-column-center
+      animation: closeMenu 0.5s linear forwards
+      &.active
+        animation: openMenu 0.5s linear forwards
+        & .header-nav-link
+          display: block
+          animation: showMenuItems 0.5s linear forwards
+
+      .header-nav-link
+        margin-bottom: 30px
+        animation: hideMenuItems 0.5s linear forwards
+      .header-nav-link-active
+        border-bottom-color: transparent
+
+@keyframes openMenu
+  from
+    height: 0
+  to
+    height: 100vh
+
+@keyframes closeMenu
+  from
+    height: 100vh
+  to
+    height: 0
+    padding: 0
+
+@keyframes showMenuItems
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes hideMenuItems
+  from
+    opacity: 1
+    display: block
+  to
+    opacity: 0
+    display: none
+
+@keyframes hideMiddleBar
+  from
+    opacity: 1
+  to
+    opacity: 0
+@keyframes showMiddleBar
+  from
+    opacity: 0
+  to
+    opacity: 1
+@keyframes moveFirstBar
+  from
+    transform: rotate(0) translateY(0)
+  to
+    transform: rotate(45deg) translateY(12px)
+@keyframes moveThirdBar
+  from
+    transform: rotate(0) translateY(0)
+  to
+    transform: rotate(-45deg) translateY(-12px)
+
+@keyframes closeFirstBar
+  from
+    transform: rotate(0) translateY(0)
+  to
+    transform: rotate(45deg) translateY(12px)
+
+@keyframes closeThirdBar
+  from
+    transform: rotate(0) translateY(0)
+  to
+    transform: rotate(-45deg) translateY(-12px)

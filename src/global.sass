@@ -1,0 +1,54 @@
+$mobile: 799px
+
+@mixin background-props
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+@mixin flex-props-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin flex-props-column-center
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+@mixin flex-props-space-between
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+@mixin button-hover
+  border: 1px solid transparent
+  transition: 0.5s
+  &:hover
+    color: #fff
+    background: #000
+    border-color: #fff
+
+@mixin first-layer
+  position: relative
+  z-index: 1
+
+.container
+  max-width: 1280px
+  margin: 0 auto
+  text-align: center
+
+html
+  overflow-x: hidden
+body.menu-open
+  position: fixed
+
+::-webkit-scrollbar
+  width: 5px
+
+::-webkit-scrollbar-track
+  background-color: black
+
+::-webkit-scrollbar-thumb
+  background-color: #40060F
+  border-radius: 50px

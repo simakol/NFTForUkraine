@@ -1,0 +1,73 @@
+@import "../../global"
+
+.header-language
+    position: absolute
+    right: 20px
+    top: 20px
+    padding: 8px 10px
+
+    &.header-language-active
+        background-color: #fff
+        border-radius: 10px
+
+    .header-language-item
+        cursor: pointer
+        background-color: transparent
+        border: none
+        @include flex-props-center
+        display: none
+        &.header-language-item-active
+            display: flex
+
+    .header-language-item-text
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 700
+        margin-right: 12px
+        color: #fff
+        text-transform: capitalize
+        &.active
+            color: #000
+        &.ua-color
+            background: linear-gradient(180deg, #0055A2 54%, #A29C00 46%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            position: relative
+
+    .header-language-item-flag
+        display: none
+        width: 15px
+        height: 9px
+        margin-right: 8px
+        &.active
+            display: block
+
+    .header-language-item-arrow
+        display: none
+        position: relative
+        width: 14px
+        height: 8px
+        &.active
+            display: block
+
+        .header-language-item-arrow-line
+            width: 2px
+            height: 8px
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #fff
+
+            &.active
+                background-color: #000
+
+            &:first-child
+                transform: rotate(-45deg)
+                &.active
+                    transform: rotate(45deg)
+
+            &:last-child
+                transform: rotate(45deg)
+                left: 4px
+                &.active
+                    transform: rotate(-45deg)

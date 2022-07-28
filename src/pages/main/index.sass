@@ -1,0 +1,154 @@
+@import "../../global"
+
+.main-page
+  .main-page-hero
+    width: 100vw
+    height: 100vh
+    background-size: cover
+    background-image: url("../../assets/images/intro-background.jpg")
+    background-attachment: fixed
+
+    .main-page-hero-wrapper
+      height: 100%
+      @include flex-props-column-center
+
+      .main-page-hero-title
+        text-align: center
+        width: 80%
+        font-size: 48px
+        font-weight: 700
+        color: #fff
+        margin-bottom: 50px
+        text-transform: uppercase
+        @include first-layer
+
+      .main-page-hero-button
+        width: 200px
+        height: 50px
+        cursor: pointer
+        background-color: #fff
+        box-shadow: 0 0 15px 5px #6F0919
+        border-radius: 15px
+        border: none
+        font-size: 24px
+        color: #000
+        font-weight: 700
+        text-transform: uppercase
+        @include flex-props-center
+        @include button-hover
+        @include first-layer
+
+.about-us
+  padding-top: 110px
+  padding-bottom: 114px
+  @include first-layer
+
+.mint
+  padding-top: 124px
+  padding-bottom: 115px
+  @include first-layer
+
+  .mints-wrapper
+    display: flex
+    @include flex-props-space-between
+    justify-content: space-evenly
+    margin-top: 100px
+
+  .mints-slider
+    display: none
+
+.results
+  padding-top: 115px
+  padding-bottom: 78px
+  @include first-layer
+
+  .donation
+    font-style: normal
+    font-weight: bold
+    text-align: center
+    color: #fff
+
+  .results-donation
+    font-size: 64px
+    line-height: 78px
+    margin-top: 73px
+    margin-bottom: 32px
+
+  .results-donation-subtitle
+    font-size: 24px
+    line-height: 29px
+
+.section-title
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 59px
+  color: #FFFFFF
+  padding-bottom: 56px
+
+.section-text
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 29px
+  color: #FFFFFF
+  width: 75%
+  margin: 0 auto
+
+.currency::after
+  content: "\0024"
+
+@media (max-width: $mobile)
+  .main-page
+    .main-page-hero
+      .main-page-hero-wrapper
+        .main-page-hero-title
+          width: 90%
+          font-size: 40px
+          margin-bottom: 35px
+
+  .about-us
+    padding: 142px 0 42px
+
+  .mint
+    padding-top: 120px
+    padding-bottom: 0
+
+    .mints-wrapper
+      display: none
+
+    .mints-slider
+      display: block
+      margin-top: 51px
+
+    .swiper-button-next
+      color: white
+      margin-right: 5%
+
+    .swiper-button-prev
+      color: white
+      margin-left: 5%
+
+  .results
+    padding-top: 120px
+    padding-bottom: 69px
+
+    .results-donation
+      font-size: 35px
+      line-height: 43px
+      margin-top: 69px
+      margin-bottom: 13px
+
+    .results-donation-subtitle
+      font-size: 18px
+      line-height: 22px
+
+  .section-title
+    font-size: 35px
+    line-height: 43px
+    padding-bottom: 30px
+
+  .section-text
+    font-size: 18px
+    line-height: 22px
+    width: 90%
