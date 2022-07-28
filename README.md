@@ -1,1 +1,0 @@
-# This is the official repo of the NFTForUkraine website. Feel free to poke around the code, everything should be pretty straight forward. All the money from every mint action is being forwarded to the Ukrainian army's crypto wallet, which is then exchanged into UAH (our national currency) and used by the troops. 
