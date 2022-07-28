@@ -1,0 +1,36 @@
+{
+  "lang_full_name": "Солов'їна",
+  "main_page": {
+    "global": {
+      "buy_button": "Придбати"
+    },
+    "header": {
+      "firstLink": "Додому",
+      "secondLink": "Хто ми",
+      "thirdLink": "Придбати",
+      "fourthLink": "Результати"
+    },
+    "hero": {
+      "title": "Придбай НФТ, допоможи врятувати Україну"
+    },
+    "about_us": {
+      "title": "укр тест",
+      "text1": "укр тест",
+      "text2": "укр тест"
+    },
+    "mint": {
+      "title": "укр тест",
+      "text": "укр тест"
+    },
+    "results": {
+      "title": "укр тест",
+      "text1": "укр тест",
+      "text2": "укр тест"
+    },
+    "donated": {
+      "main_text": "укр тест",
+      "subtext": "укр тест"
+    },
+    "copyright": "укр тест"
+  }
+}
